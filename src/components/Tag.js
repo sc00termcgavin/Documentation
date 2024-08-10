@@ -5,10 +5,10 @@ export default function Tag({ children, color }) {
     <span
       style={{
         backgroundColor: color,
-        borderRadius: '4px',
+        borderRadius: '2px',
         color: '#fff',
-        padding: '0.2rem 0.5rem',
-        fontWeight: 'bold',
+        padding: '0.2rem',
+        // fontWeight: 'bold',
       }}
     >
       {children}
