@@ -9,9 +9,14 @@ const organizationName = "sc00termcgavin";
 const projectName = "Documentation";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   title: 'Documentation',
   tagline: 'Docs',
   favicon: 'img/favicon.ico',
+  
 
   // Set the production url of your site here
   url: 'https://sc00termcgavindocs.netlify.app/',
@@ -66,6 +71,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      mermaid: {
+        theme: {light: 'neutral', dark: 'forest'},
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -128,11 +136,14 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Sc00termcgavin's Documentation Built with Docusaurus.`,
       },
+
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
     }),
+    
 };
 
 export default config;
+
