@@ -1,6 +1,6 @@
 ---
 title: Table of Contents
-sidebar_position: 2
+sidebar_position: 1
 toc_min_heading_level: 2
 toc_max_heading_level: 6
 ---
