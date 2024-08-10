@@ -12,7 +12,7 @@ const config = {
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  
   title: 'Documentation',
   tagline: 'Docs',
   favicon: 'img/favicon.ico',
@@ -142,7 +142,15 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
-    
+    themes: [
+      '@docusaurus/theme-mermaid',
+      [
+        require.resolve("@easyops-cn/docusaurus-search-local"),
+        {
+          hashed: true,
+        },
+      ],
+    ],
 };
 
 export default config;
