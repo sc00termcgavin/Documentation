@@ -6,6 +6,7 @@ toc_max_heading_level: 6
 ---
 
 import TOCInline from '@theme/TOCInline';
+import Mermaid from '@theme/Mermaid';
 
 <TOCInline toc={toc} minHeadingLevel={2} maxHeadingLevel={6} />
 
@@ -164,3 +165,16 @@ import Tag from '@site/src/components/Tag';
 - **Wildcards**: A special type of SSL/TLS certificate that secures a domain and all its subdomains with a single certificate.
   - **Subject Alternative Name (SAN)**:  Wildcard certificates often leverage the Subject Alternative Name extension within the X.509 certificate format. SAN allows for the inclusion of additional domain names, enabling the certificate to support multiple domains.
   - **Wildcard Domains**: A wildcard domain is a domain name that uses a wildcard character (*) to represent any subdomain under a specific domain.
+
+
+
+
+
+
+<Mermaid
+  value={`graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;`}
+/>
