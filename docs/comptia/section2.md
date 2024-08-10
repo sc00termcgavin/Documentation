@@ -5,8 +5,6 @@ toc_min_heading_level: 2
 toc_max_heading_level: 6
 ---
 
-# Threats, Vulnerabilities, and Mitigations
-
 ## 2.1 Threat Actors and Motivations
 
 ### Threat Actors
@@ -106,10 +104,3 @@ toc_max_heading_level: 6
 - **Address Space Layout Randomization (ASLR)**: Mitigate buffer overflow mem exploits 
 - **Secure Deallocation**: Takes any residual data in a resource (memory, disk space, etc.) and cleans or overwrites it before reuse, preventing potential data leakage.
 
-## Authentication
-
-- **Extensible Authentication Protocol - Message Digest 5 (EAP-MD5)**: Secure hash of a password sent to the authenticating serve
-  - no mutual authentication.
-- **Flexible Authentication via Secure Tunneling (EAP-FAST)**: Cisco's replacement for LEAP. It addresses LEAP vulnerabilities using Transport Layer Security (TLS) with Protected Access Credential (PAC) instead of certificates.
-- **Protected Extensible Authentication Protocol (PEAP)**: Server-side public key certificate to create an encrypted tunnel between the supplicant and authentication server
-- **RADIUS federation**: Extending the traditional RADIUS (Remote Authentication Dial-In User Service) protocol to support authentication and authorization across different organizations or administrative domains.
