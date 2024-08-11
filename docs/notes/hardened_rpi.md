@@ -1,4 +1,7 @@
-## Hardened Raspberry Pi Setup 
+---
+title: Hardened Raspberry Pi Setup 
+sidebar_position: 1
+---
 
 ### Step 1: Create SSH key pair
 

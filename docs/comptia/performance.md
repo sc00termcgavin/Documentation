@@ -193,7 +193,7 @@ Corrective operational controls are measures taken to address and rectify issues
 
 2. Regulations
   
-|  HR System | Patient Database System | 
+|  HR System | Patient Database System |
 |:----------:|:-----------------------:|
 | SoX        | HIPAA                   |
 | ISO 27001  | PCI DSS                 |
