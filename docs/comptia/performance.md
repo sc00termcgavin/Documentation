@@ -24,7 +24,7 @@ sidebar_position: 6
 
 ---
 
-### HTTP connections and certificates
+### IP Connections / FQDN and certificates
 
 > Junior Pen Test: 
 > - Browsing website using IP address. 
@@ -39,10 +39,11 @@ sidebar_position: 6
 > - Cert cibfugred right
 > - Client related?
 
-- Issue: Missing Chain of Trust
+- Issue: Server rejects a certificate
+  - Missing Chain of Trust
+    - Missing Root/Intermediate CA certs
     - Dont use FQDN, Use the IP
 - Solution: 
-  - Connect with IP
   - Install root CA-G2 Cert
   - Install secure CA-G2 Cert
 
@@ -159,7 +160,6 @@ sidebar_position: 6
       3. Resilant Backups
 
 
-
 Data deduplication is a technique used in data storage and management to eliminate duplicate copies of data.
 
 Corrective operational controls are measures taken to address and rectify issues, deficiencies, or deviations identified in a system, process, or operation.
@@ -171,20 +171,20 @@ Corrective operational controls are measures taken to address and rectify issues
 
 1. Access:
 
-- Front Desk Interns
+- Front Desk Interns: PCI DSS - Billing
   - [ ] Patient Information
   - [ ] Billing Codes
-- Medical Co-Ops
-  - [ ] Patient Medical Symtoms
+- Medical Co-Ops: assist in the plans, address with symptoms
+  - [ ] Patient Medical Symptoms
   - [ ] Recomended Treatment Plans
-- Clinic Staff
+- Clinic Staff: all
   - [ ] Medical Records
   - [ ] Patient Information
   - [ ] Patentia Medical SYmtoms
   - [ ] Recomended Treatment Plans
   - [ ] Patient Treatment Data
   - [ ] Billing Codes
-- Governance Committee
+- Governance Committee: doesnt need patient info
   - [ ] Medical Rcords
   - [ ] Patient Medical SYmtoms
   - [ ] Recomended Treatment Plans
@@ -202,7 +202,7 @@ Corrective operational controls are measures taken to address and rectify issues
 
 HR:
 
-- SOX: Financial Records
+- SOX: Sarbanes–Oxley Act -- Financial Records
 - ISO 27001: HR data security of people
 - CCPA Personal Data 
 

@@ -45,7 +45,8 @@ toc_max_heading_level: 6
 
 ### Mobile Devices
 
-- **Jailbreaking**: Removing restrictions to gain root access to system files on mobile devices.
+- **Jailbreaking**: A method used to gain elevated privileges and access to system files on mobile devices.
+  - Allows users to install unauthorized apps, customize the device's appearance and behavior, access system files, and bypass restrictions implemented by Apple.
 - **Sideloading**: Installing unauthorized Apps from non official sources.
 
 ### Virtualization
@@ -91,10 +92,11 @@ toc_max_heading_level: 6
 
 ### Password Attacks
 
-- **Spraying**: Password spraying involves attempting a few commonly used passwords against many accounts simultaneously.
 - **Brute Force**: Trial and error method by trying all possible combinations of passwords or keys.
+- **Credential-Stuffing**: Attackers employ usernames and passwords leaked from other breaches and try them on different websites, banking on the fact that many users reuse their passwords across multiple sites.
+- **Spraying**: Password spraying involves attempting a few commonly used passwords against many accounts simultaneously.
 
-## Indicators of Compromise (IOC)
+### Indicators of Compromise (IOC)
 
 - **Impossible travel**: The detection of a user login activities that are geographically impossible or highly unlikely based on the physical constraints of time and distance.
   - Indicator: Login activity from two or more locations that are far apart geographically

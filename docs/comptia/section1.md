@@ -60,7 +60,7 @@ import Tag from '@site/src/components/Tag';
   - Physical: Warning Signs
 - **Compensating**: Temporary control using other means because existing controls aren’t sufficient.
   - Technical - Blocking a specific application instead of patching
-  - Managerial - Implementing a separation of duties
+  - Managerial - Isolating a critical system that cannot be patched.
   - Operational - Require multiple security staff
   - Physical - Power generator after a power outage
 - **Directive**: Enforce rule of behavior like policy
@@ -138,6 +138,14 @@ import Tag from '@site/src/components/Tag';
 
 ### Public Key Infrastructure (PKI)
 
+### Obfuscation
+
+- **Data Masking**: Redacting contents of a database field by substituting a string such as X in place. 
+- **Salting**: Adds random data to inputs prior to applying a cryptographic function like hashing. 
+- **Steganography**: A technique of hiding information within other, non-suspicious data, such as embedding a secret message within an image or audio file.
+- **Tokenization**: Randomly generated token replaces a database field while maintaining the original data on a separate token server. 
+
+
 ### Tools
 
 - **Trusted Platform Module (TPM)**: Typically integrated into the motherboard of a computer or device and are designed to enhance the security of the overall computing environment. It provides a secure and isolated environment for storing cryptographic keys, performing cryptographic operations, and ensuring the integrity of the system's boot process. 
@@ -167,14 +175,23 @@ import Tag from '@site/src/components/Tag';
   - **Wildcard Domains**: A wildcard domain is a domain name that uses a wildcard character (*) to represent any subdomain under a specific domain.
 
 
-
-
-
-
 <Mermaid
   value={`graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;`}
+    A[Generate Key Pair] --> B[Create Certificate Signing Request CSR];
+    B --> C[Submit CSR to Certificate Authority CA];
+    C --> D[CA Verification Process];
+    D --> E[Receive and Install Certificate];
+    E --> F[Configure the Server];
+    F --> G[Test Configuration];
+    G --> H[Monitor Expiration and Renew];
+
+    subgraph Verification
+        D1[Domain Validation DV];
+        D2[Organization Validation OV];
+        D3[Extended Validation EV];
+        D --> D1;
+        D --> D2;
+        D --> D3;
+    end
+    `}
 />
