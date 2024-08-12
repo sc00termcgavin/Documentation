@@ -10,11 +10,12 @@ import Mermaid from '@theme/Mermaid';
 
 <TOCInline toc={toc} minHeadingLevel={2} maxHeadingLevel={6} />
 
-import Tag from '@site/src/components/Tag';
 
 ## 1.1 Security Controls
 
-### <Tag color="#ea14cb">Control Categories</Tag>
+
+
+### Control Categories
 
 - **Technical Controls**
   - Security controls built into the hardware, software, or firmware components
@@ -52,7 +53,7 @@ import Tag from '@site/src/components/Tag';
   - Technical: Backup restoration
   - Managerial: Creating Policies
   - Operational: Active IDS
-  - Physical: Fire extinguisher
+  - Physical: A security camera system monitoring the premises.
 - **Deterrent**: Controls to prevent incidents by discouraging threats and intrusion attempts.
   - Technical: Application splash screen
   - Managerial: Demotion threats

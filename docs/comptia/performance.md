@@ -3,8 +3,61 @@ sidebar_label: 'Performance'
 sidebar_position: 6
 ---
 
-### Performance Questions
+## Performance Questions
 
+### Log Analysis
+
+![Logs](img/loganalysis.png)
+
+<p><u> Mitigation Actions</u> </p>
+
+1. `Data Loss Prevention` to address the unauthorized data transfer issue by monitoring and controlling data transfers across the company network. 
+2. `Email Content Filtering` by inspecting email content and blocking transfers.
+3. `Restricting After-Hours Server Access` by limiting time frames the servers are accessible. 
+  
+<p><u> Data Transfers</u> </p>
+
+- `HTTPS`
+
+<p><u> Web Applications</u> </p>
+
+- Cipher: `AES-256-GCM-SHA384`
+- TLS Version: `1.3`
+
+<p><u> Compliance Considerations</u> </p>
+
+- `HIPPA`
+
+---
+
+### Data Infrastructure
+
+<p><u>Data Center Infrastructure</u> </p>
+ 
+|    Benefit                            | Drawback           | 
+|:------------------------------------:|:------------------:|
+| Less Complex Infrastructure          | Signle Vender      |
+| Server Redundancy                    |  Onsite Backup     | 
+
+<p><u>Cloud Infrastructure</u> </p>
+ 
+|    Benefit                   | Drawback                    | 
+|:---------------------------:|:---------------------------:|
+| MultiVender  Infrastructure | More Complex Infrastructure |
+| More Resilient Operations   | Price Variations            |
+
+
+<p><u> Recomendations</u> </p>
+
+
+- Best Solution: `Cloud Infrastructure`
+- `Multiple Venders`
+- `Power Redundancy`
+- `Resilient Backups`
+
+---
+
+### Situation
 
 - Security Engineer: 
   - Mobile Device management
@@ -135,37 +188,10 @@ sidebar_position: 6
 
 ---
 
-### Data Infrastructure
 
 
-> Data Center
-
-|    Benefit              | Drawback           | 
-|:----------------------:|:------------------:|
-| Less Complex           | Signle Vender      |
-| Onsite Backup          |  Server Reduendcy  | 
-
-> Cloud Infrastructure
-
-|    Benefit          | Drawback          | 
-|:------------------:|:-----------------:|
-| MultiVender        | More Complex      |
-| More Resilient     | Price Variations  |
 
 
-> Best Solution: Cloud
-   1. Recomendations:
-      1. Multi Venders
-      2. Power Reduendency
-      3. Resilant Backups
-
-
-Data deduplication is a technique used in data storage and management to eliminate duplicate copies of data.
-
-Corrective operational controls are measures taken to address and rectify issues, deficiencies, or deviations identified in a system, process, or operation.
-
-
----
 
 ### Medical Access and Regulations
 

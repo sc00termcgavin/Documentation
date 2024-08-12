@@ -3,10 +3,12 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+// import CustomButton from '../components/CustomButton';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
+import Button from '../components/Button/Button';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -17,11 +19,12 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
+          {/* <Link
+            className="button button--success button--lg"
             to="/docs">
             Jump
-          </Link>
+          </Link> */}
+          <Button to="/docs">Jump</Button>
         </div>
       </div>
     </header>
