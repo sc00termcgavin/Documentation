@@ -71,6 +71,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Force Darkmode onLoad
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
+      // Mermaid Diagrams
       mermaid: {
         theme: {light: 'neutral', dark: 'forest'},
       },
@@ -142,6 +149,8 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    // Plugin additions
+    // mermaid diagrams and search function
     themes: [
       '@docusaurus/theme-mermaid',
       [
