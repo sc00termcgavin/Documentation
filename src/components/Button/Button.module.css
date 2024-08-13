@@ -33,23 +33,38 @@
     border-radius: 10px;
     display: block;
   } */
+  :root {
+    --button-text-color: black; /* Default text color for light mode */
+    --button-bg-color: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%) !important; /* Light mode gradient */
+  }
+  
+  [data-theme='dark'] {
+    --button-text-color: white; /* Text color for dark mode */
+    --button-bg-color: linear-gradient(to right, #ff0084 0%, #33001b 51%, #ff0084 100%) !important; /* Dark mode gradient */
+  }
+  
   .btnGrad {
-    background-image: linear-gradient(to right, #ff0084 0%, #33001b  51%, #ff0084  100%) !important;
+    background-image: var(--button-bg-color); /* Use variable for background */
     margin: 10px;
-    padding: 15px 45px;
+    padding: 30px 80px;
+    font-size: 24px;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
+    color: var(--button-text-color); /* Use variable for text color */
+    box-shadow: 0 0 20px black;
     border-radius: 10px;
-    display: block;
-  }
-  .btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
+    display: inline-block;
     text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btnGrad:hover {
+    background-position: right center;
+    color: var(--button-text-color); /* Ensure it matches the mode */
   }
  
-              
+                       
+
