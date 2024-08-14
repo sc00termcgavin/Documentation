@@ -37,10 +37,10 @@ Corrective operational controls are measures taken to address and rectify issues
 adad
 </details>
 
-<ColorHeading level={1} color="#FF5733">This is an H1 heading with color</ColorHeading>
+<ColorHeading level={1} color="#E3D4AD">This is an H1 heading with color</ColorHeading>
 
 
 
-
+<ColorHeading level={2} color="#EF1761">This is an H12 heading with color</ColorHeading>
 
 
