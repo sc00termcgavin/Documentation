@@ -13,13 +13,14 @@ const config = {
     mermaid: true,
   },
   
-  title: 'Documentation',
-  tagline: 'Docs',
+  title: 'Development Documentation Digest',
+  tagline: 'A Curated Collection of Personal Notes',
   favicon: 'img/favicon.ico',
   
 
   // Set the production url of your site here
-  url: 'https://sc00termcgavindocs.netlify.app/',
+  // url: 'https://sc00termcgavindocs.netlify.app/',
+  url: 'https://docs.surveillancelabs.net/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -94,10 +95,10 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Notes',
+            label: 'Docs',
           },
-          {to: '/about', label: 'About', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/resume', label: 'Resume', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           
           {
             href: `https://github.com/${organizationName}/${projectName}`,
@@ -110,11 +111,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Notes',
-                to: '/docs/intro',
+                label: 'Docs',
+                to: 'docs/',
+              },
+              {
+                label: 'Resume',
+                to: 'resume/',
               },
             ],
           },
@@ -130,10 +135,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: `https://github.com/${organizationName}/${projectName}`,
@@ -151,6 +152,7 @@ const config = {
     }),
     // Plugin additions
     // mermaid diagrams and search function
+    
     themes: [
       '@docusaurus/theme-mermaid',
       [
