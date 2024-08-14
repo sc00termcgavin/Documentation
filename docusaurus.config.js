@@ -102,8 +102,10 @@ const config = {
           
           {
             href: `https://github.com/${organizationName}/${projectName}`,
-            label: 'GitHub',
+            // label: 'GitHub',
             position: 'right',
+            className: "header--github-link",
+            "aria-label": "GitHub repository",
           },
         ],
       },
