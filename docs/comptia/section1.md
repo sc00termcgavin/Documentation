@@ -7,6 +7,8 @@ import Mermaid from '@theme/Mermaid';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+---
+
 ## <TextColor lightColor="#064CD5" darkColor="#EF1761">1.1 Security Controls</TextColor>
 
 ### <TextColor lightColor="#000000" darkColor="#E3D4AD">Control Categories</TextColor>
