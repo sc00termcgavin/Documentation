@@ -15,7 +15,7 @@ Keys Generated on Tails and exported to my Yubikey
 
 ### Step 2: Import Master Key
 
-```console
+```jsx title="Import Master Key"
 $ gpg --import /media/amnesia/Tails/master.asc
 gpg: key 0xC2709D13BAB4763C: 1 signature not checked due to a missing key
 gpg: key 0xC2709D13BAB4763C: public key "John Doe <john@example.net>" imported

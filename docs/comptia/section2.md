@@ -44,6 +44,7 @@ import TextColor from '@site/src/components/TextColor';
 - **Race Condition**: Two events happening almost simultaneously in a program which depend on the timing/order of events.
   - **Time-of-Check (TOC)**: A vulnerability that occurs when a check on a condition (e.g., file permissions) is performed before an action is taken, and the condition can change between the check and the action.
   - **Time-of-Use (TOU)**: A vulnerability that occurs when the condition checked and the action taken are dependent on the timing of events, leading to potential exploitation.
+    - Time-of-check (TOC) aims to enforce access controls at the time of user authentication, and Time-of-use (TOU) ensures proper access controls during data usage.
 
 
 ### <TextColor lightColor="#000000" darkColor="#E3D4AD">Web-based</TextColor>

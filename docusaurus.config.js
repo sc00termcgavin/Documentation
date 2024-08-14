@@ -117,7 +117,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: 'docs/',
+                to: 'docs/category/comptia',
               },
               {
                 label: 'Resume',

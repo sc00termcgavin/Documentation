@@ -47,23 +47,24 @@ $ sudo diskutil unmountDisk /dev/disk>N<
 Unmount of all volumes on disk4 was successful
 ```
 
-#### On linux
+<details>
+  <summary>On linux</summary>
+  <ul>
+    <li>Extract PI OS LITE archive</li>
+    <code>unxz 2024-03-15-raspios-bookworm-arm64-lite.img.xz</code>
+    <li>Copy raspi to microSD</li>
+    <code>
+      $ sudo fdisk --list
 
-- Extract PI OS LITE archive
+      $ sudo umount /dev/sdn*
 
-```shell
-unxz 2024-03-15-raspios-bookworm-arm64-lite.img.xz
-```
+      $ sudo dd bs=1M if=2024-03-15-raspios-bookworm-arm64-lite.img of=/dev/sdn
 
-- Copy raspi to microSD
+    </code>
+  </ul>
+  
+</details>
 
-```console
-$ sudo fdisk --list
-
-$ sudo umount /dev/sdn*
-
-$ sudo dd bs=1M if=2024-03-15-raspios-bookworm-arm64-lite.img of=/dev/sdn
-```
 
 ### Step 4: Create User
 

@@ -123,7 +123,10 @@ import TabItem from '@theme/TabItem';
       <li><strong>Detective:</strong> Identify and record attempts of intrusions.</li>
       <li><strong>Corrective:</strong> Attempt to reverse the impact of an incident after an event has been detected.</li>
       <li><strong>Compensating:</strong> Temporary control using other means because existing controls aren’t sufficient.</li>
-      <li><strong>Directive:</strong> Enforce rule of behavior like policy.</li> 
+      <li><strong>Directive:</strong> Enforce rule of behavior like policy.</li>
+      <ul>
+        <li>Corrective operational controls are measures taken to address and rectify issues, deficiencies, or deviations identified in a system, process, or operation.</li>
+      </ul>
     </ul>
   </div>
 </div>

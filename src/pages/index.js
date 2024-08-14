@@ -24,7 +24,7 @@ function HomepageHeader() {
             to="/docs">
             Jump
           </Link> */}
-          <Button to="/docs">Jump</Button>
+          <Button to="/docs/category/comptia">Jump</Button>
         {/* </div> */}
       </div>
     </header>
