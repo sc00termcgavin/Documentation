@@ -3,9 +3,24 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  gap: 2rem; /* Space between items */
+  justify-content: center; /* Center items horizontally */
+  align-items: stretch; /* Stretch items to fill container height */
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+.feature {
+  flex: 1; /* Allow items to grow and fill available space */
+  max-width: 300px; /* Limit maximum width */
+  text-align: center; /* Center text */
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  gap: 2rem; /* Space between items */
 }
