@@ -15,7 +15,7 @@ Keys Generated on Tails and exported to my Yubikey
 
 ### Step 2: Import Master Key
 
-```jsx title="Import Master Key"
+```jsx title=""
 $ gpg --import /media/amnesia/Tails/master.asc
 gpg: key 0xC2709D13BAB4763C: 1 signature not checked due to a missing key
 gpg: key 0xC2709D13BAB4763C: public key "John Doe <john@example.net>" imported
@@ -29,13 +29,13 @@ gpg: no ultimately trusted keys found
 
 ### Step 3: set master key ID environment variable
 
-```shell
+```jsx title=""
 KEY_ID=0xC2709D13BAB4763C
 ```
 
 ### Step 4: Extend Expiry date Subkeys
 
-```console
+```jsx title=""
 $ gpg --edit-key $KEY_ID
 gpg (GnuPG) 2.2.12; Copyright (C) 2018 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
@@ -121,13 +121,13 @@ gpg> save
 
 ### Step 5: Export Public Key to VeraCrypt Encrypted Volume
 
-```console
+```jsx title=""
 $ gpg --armor --export $KEY_ID > /media/amnesia/Tails/pub.asc
 ```
 
 ### Step 6: Cp Pub Key to Backup Volume
 
-```shell
+```jsx title=""
 cp /media/amnesia/Tails/pub.asc "/media/amnesia/keyBackUp/johndoe.asc"
 ```
 

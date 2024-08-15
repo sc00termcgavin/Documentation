@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ### Step 1: Create SSH key pair
 
-```shell
+```jsx title=""
 $ cd ~/.ssh
 
 $ ssh-keygen -t ed25519 -C "pi"
@@ -14,9 +14,8 @@ $ cat pi.pub
 ```
 
 ### Step 2: Generate Heredoc for the output to be used at [step 15](#step-15-Configure-Pi-ssh-authorized-keys)
-> It reads the contents of the pi file containing the public SSH key and appends to the authorized_keys file
 
-```shell
+```jsx title=""
 cat << EOF
 cat << "_EOF" > ~/.ssh/authorized_keys
 $(cat ~/.ssh/pi.pub)
@@ -29,10 +28,12 @@ EOF
 #### On macOS
 
 
-> Run: `diskutil list` to find disk ID of microSD card
-> Replace: `disk>N<` and `rdisk>N<` with disk ID (`disk4` and `rdisk4` in my case)
-> Replace  `2024-07-04-raspios-bookworm-arm64-lite.img` with most up to date image
-```console
+
+> - Run: `diskutil list` to find disk ID of microSD card
+> - Replace: `disk>N<` and `rdisk>N<` with disk ID (`disk4` and `rdisk4` in my case)
+> - Replace  `2024-07-04-raspios-bookworm-arm64-lite.img` with most up to date image
+
+```jsx title=""
 $ diskutil list 
 
 $ sudo diskutil unmountDisk /dev/disk>N< 
@@ -81,7 +82,7 @@ Unmount of all volumes on disk4 was successful
 ### Step 5: Fixing Locale issue
 > edit /etc/locale.gen uncomment en_US.UTF-8 UTF-8
 
-```shell
+```jsx title=""
 sudo nano /etc/locale.gen
 
 sudo locale-gen en_US.UTF-8
@@ -116,7 +117,7 @@ When asked if you wish to reboot, select “No”.
 See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 > Be sure NTP is working. Check status with `timedatectl` - make sure "NTP Service" is "active".
 
-```shell
+```jsx title=""
 timedatectl set-timezone America/Denver
 ```
 
@@ -130,20 +131,20 @@ timedatectl set-timezone America/Denver
 ### Step 12: Obtain IP of Raspberry Pi (`eth0`: Ethernet | `wlan0`: WI-FI)
 > Make sure it matches your reserved static IP on the Router
 
-```shell
+```jsx title=""
 ip a
 ```
 
 ### Step 13: SSH into the Pi
 > Heads-up: replace `192.168.x.x` with IP of Raspberry Pi
 
-```shell
+```jsx title=""
 ssh pi-admin@192.168.x.x
 ```
 
 ### Step 14: Disable Bash history for the Pi
 
-```shell
+```jsx title=""
 sed -i -E 's/^HISTSIZE=/#HISTSIZE=/' ~/.bashrc
 sed -i -E 's/^HISTFILESIZE=/#HISTFILESIZE=/' ~/.bashrc
 echo "HISTFILESIZE=0" >> ~/.bashrc
@@ -155,13 +156,13 @@ source ~/.bashrc
 
 #### Create `.ssh` directory
 
-```shell
+```jsx title=""
 mkdir ~/.ssh
 ```
 
 #### Create `~/.ssh/authorized_keys` using heredoc generated at [step 2](#step-2-generate-heredoc-the-output-of-following-command-will-be-used-at-step-13)
 
-```shell
+```jsx title=""
 cat << "_EOF" > ~/.ssh/authorized_keys
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHLwQ2fk5VvoKJ6PNdJfmtum6fTAIn7xG5vbFm0YjEGY pi
 _EOF
@@ -169,7 +170,7 @@ _EOF
 
 ## Step 16: log out
 
-```shell
+```jsx title=""
 exit
 ```
 
@@ -179,20 +180,20 @@ exit
 > Heads-up: when asked for passphrase, enter passphrase from [step 1](#step-1-create-ssh-key-pair-on-macos).
 
 
-```shell
+```jsx title=""
 ssh -i ~/.ssh/pi pi-admin@192.168.x.x
 ```
 
 
 ### Step 18: switch to root
 
-```shell
+```jsx title=""
 sudo su -
 ```
 
 ### Step 19: disable root Bash history
 
-```shell
+```jsx title=""
 echo "HISTFILESIZE=0" >> ~/.bashrc
 history -c; history -w
 source ~/.bashrc
@@ -200,7 +201,7 @@ source ~/.bashrc
 
 ### Step 20: disable pi sudo `nopassword` “feature”
 
-```shell
+```jsx title=""
 rm /etc/sudoers.d/010_*
 ```
 
@@ -208,7 +209,7 @@ rm /etc/sudoers.d/010_*
 
 When asked for password, use output from `openssl rand -base64 24` (and store password in password manager).
 
-```console
+```jsx title=""
 $ passwd
 New password:
 Retype new password:
@@ -217,7 +218,7 @@ passwd: password updated successfully
 
 ### Step 22: disable root login and password authentication
 
-```shell
+```jsx title=""
 sed -i -E 's/^(#)?PermitRootLogin (prohibit-password|yes)/PermitRootLogin no/' /etc/ssh/sshd_config
 sed -i -E 's/^(#)?PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 systemctl restart ssh
@@ -229,13 +230,13 @@ systemctl restart ssh
 
 > Disable Bluetooth
 
-```shell
+```jsx title=""
 echo "dtoverlay=disable-bt" >> /boot/config.txt
 ```
 
 > Disable Wi-Fi (if using ethernet)
 
-```shell
+```jsx title=""
 echo "dtoverlay=disable-wifi" >> /boot/config.txt
 ```
 
@@ -243,7 +244,7 @@ echo "dtoverlay=disable-wifi" >> /boot/config.txt
 
 > Heads-up: only run following if network is IPv4-only.
 
-```shell
+```jsx title=""
 cp /etc/sysctl.conf /etc/sysctl.conf.backup
 cat << "EOF" >> /etc/sysctl.conf
 net.ipv6.conf.all.disable_ipv6 = 1
@@ -257,7 +258,7 @@ sysctl -p
 
 #### Enable nftables
 
-```shell
+```jsx title=""
 systemctl enable nftables
 systemctl start nftables
 ```
@@ -325,7 +326,7 @@ nft add rule ip firewall output ct state established,related accept -->
 
 #### Log out
 
-```console
+```jsx title=""
 $ exit
 
 $ exit
@@ -336,19 +337,19 @@ $ exit
 
 > Heads-up: replace `192.168.x.x` with IP of Raspberry Pi.
 
-```shell
+```jsx title=""
 ssh -i ~/.ssh/pi pi-admin@192.168.x.x
 ```
 
 ### Step 27: switch to root
 
-```shell
+```jsx title=""
 sudo su -
 ```
 
 ### Step 28: make firewall rules persistent
 
-```shell
+```jsx title=""
 cat << "EOF" > /etc/nftables.conf
 #!/usr/sbin/nft -f
 
@@ -357,19 +358,19 @@ flush ruleset
 EOF
 ```
 
-```shell
+```jsx title=""
 nft list ruleset >> /etc/nftables.conf
 ```
 
 ### Step 29: disable swap
 
-```shell
+```jsx title=""
 systemctl disable dphys-swapfile
 ```
 
 ### Step 30: update APT index and upgrade packages
 
-```console
+```jsx title=""
 $ apt update
 
 $ apt upgrade -y
