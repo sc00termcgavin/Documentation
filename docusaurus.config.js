@@ -15,7 +15,7 @@ const config = {
   
   title: 'Development Documentation Digest',
   tagline: 'A Curated Collection of Personal Notes',
-  favicon: 'img/favicon.ico',
+  // favicon: 'img/favicon.ico',
   
 
   // Set the production url of your site here
@@ -83,12 +83,14 @@ const config = {
         theme: {light: 'neutral', dark: 'forest'},
       },
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      // image: 'img/docusaurus-social-card.jpg',
+      image: 'img/Scooter.png',
       navbar: {
         title: 'Homepage',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          // src: 'img/logo.svg',
+          src: 'img/logos.png',
         },
         items: [
           {
