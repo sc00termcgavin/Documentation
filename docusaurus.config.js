@@ -86,11 +86,13 @@ const config = {
       // image: 'img/docusaurus-social-card.jpg',
       image: 'img/Scooter.png',
       navbar: {
-        title: 'Homepage',
+        title: '~/',
         logo: {
           alt: 'My Site Logo',
           // src: 'img/logo.svg',
-          src: 'img/logos.png',
+          // src: 'img/logo-light.png', // Light mode logo
+          // srcDark: 'img/logo-dark.png', // Dark mode logo
+          src: 'img/logo.png',
         },
         items: [
           {

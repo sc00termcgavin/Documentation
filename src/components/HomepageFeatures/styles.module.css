@@ -6,6 +6,10 @@
   gap: 2rem; /* Space between items */
   justify-content: center; /* Center items horizontally */
   align-items: stretch; /* Stretch items to fill container height */
+  /* background: linear-gradient(109.6deg, #ff0099 0%, #00d2ff 100%); */
+  /* background: linear-gradient(109.5deg, #004d40 9.4%, #003366 78.4%); */
+/* background: linear-gradient(109.6deg, rgb(69, 179, 224) 11.2%, rgb(102, 51, 153) 100.2%); */
+/* background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%) */
 }
 
 .featureSvg {
@@ -24,3 +28,15 @@
   justify-content: center; /* Center items horizontally */
   gap: 2rem; /* Space between items */
 }
+
+/* Dark Mode Features Background */
+/* [data-theme='dark'] .features {
+  background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%); 
+} */
+
+/* Light Mode Features Background */
+/* [data-theme='light'] .features {
+  background: linear-gradient(109.6deg, #ff007f 0%, #00274d 100%); 
+} */
+
+

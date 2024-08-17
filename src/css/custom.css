@@ -4,6 +4,7 @@
  * work well for content-centric websites.
  */
 
+ /* Sand Tan: #e1b38*/
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #a01c63;
@@ -19,42 +20,16 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #00f9ff;
-  --ifm-color-primary-dark: #00e0e6;
-  --ifm-color-primary-darker: #00d4d9;
-  --ifm-color-primary-darkest: #00aeb3;
-  --ifm-color-primary-light: #1afaff;
-  --ifm-color-primary-lighter: #26faff;
-  --ifm-color-primary-lightest: #4dfbff;
+  --ifm-color-primary: #63d6e0;
+  --ifm-color-primary-dark: #48cfdb;
+  --ifm-color-primary-darker: #3bcbd8;
+  --ifm-color-primary-darkest: #25b1bd;
+  --ifm-color-primary-light: #7edde5;
+  --ifm-color-primary-lighter: #8be1e8;
+  --ifm-color-primary-lightest: #b4ebf0;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-
-.header--github-link {
-  width: 32px;
-  height: 32px;
-  padding: 6px;
-  margin-right: 4px;
-  border-radius: 50%;
-  transition: background var(--ifm-transition-fast);
-}
-
-.header--github-link:hover {
-  background: var(--ifm-color-emphasis-200);
-}
-
-.header--github-link:before {
-  content: '';
-  height: 100%;
-  display: block;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
-}
-
-html[data-theme='dark'] .header--github-link:before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
-}
-
 details {
-
   border: 1px solid #ccc;
   padding: 10px;
 }
@@ -80,12 +55,160 @@ summary {
   font-style: normal;
 }
 
-/* body {
-  font-family: 'Fira Code', monospace;
+.header--github-link {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  margin-right: 4px;
+  border-radius: 50%;
+  transition: background var(--ifm-transition-fast);
 }
 
-code {
-  font-family: 'Fira Code', monospace;
-} */
+.header--github-link:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+/* Dark Mode Navbar Link Styles */
+[data-theme='dark'] .navbar__link {
+  color: #ff007f; /* White color for dark mode links */
+}
+
+/* Light Mode Navbar Link Styles */
+[data-theme='light'] .navbar__link {
+  color: #63d6e0; /* White color for light mode links */
+}
 
 
+.header--github-link:before {
+  content: '';
+  height: 100%;
+  display: block;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
+}
+
+html[data-theme='dark'] .header--github-link:before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
+}
+
+/* Change color of the navbar title */
+
+
+/* Nav Bar Text Colors */
+html[data-theme='light'] .navbar__title.text--truncate {
+  color: #63d6e0; /* Replace with your light mode color */
+}
+
+html[data-theme='dark'] .navbar__title.text--truncate {
+  color: #ff007f; /* Replace with your dark mode color */
+}
+
+
+
+/* Dark Mode Styles */
+/************************/
+[data-theme='dark'] .navbar {
+  background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Deep shadow for dark mode */
+}
+
+/* Glossy Overlay for Dark Mode */
+[data-theme='dark'] .navbar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for a glossy effect */
+  mix-blend-mode: screen; /* Blends with the background */
+  pointer-events: none; /* Ensures it doesn't interfere with interactions */
+}
+
+/* Highlight Effect for Dark Mode */
+[data-theme='dark'] .navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1); /* Subtle highlight for added gloss */
+  mix-blend-mode: screen; /* Blends with the background */
+  opacity: 0.3; /* Adjust opacity as needed */
+  pointer-events: none; /* Ensures it doesn't interfere with interactions */
+}
+
+/* Light Mode Styles */
+/************************/
+
+/* Light Mode Styles */
+[data-theme='light'] .navbar {
+  background: linear-gradient(289.6deg, #ff007f 0%, #00274d 100%); /* Light mode gradient */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow for light mode */
+}
+
+/* Glossy Overlay for Light Mode */
+[data-theme='light'] .navbar::after {
+  background: rgba(255, 255, 255, 0.2); /* Lighter overlay for a glossy effect */
+}
+
+/* Highlight Effect for Light Mode */
+[data-theme='light'] .navbar::before {
+  background: rgba(255, 255, 255, 0.2); /* Slightly stronger highlight for added gloss */
+  opacity: 0.4; /* Adjust opacity as needed */
+}
+
+
+
+/* Dark Mode Button Styling */
+[data-theme='dark'] .button {
+  color: var(--button-text-color); /* Dark mode button text color */
+  background: var(--button-bg-color); /* Dark mode button background gradient */
+}
+
+/* Light Mode Button Styling */
+[data-theme='light'] .button {
+  /* Add any additional light mode button styling here if needed */
+}
+
+
+
+/* Base Footer Styles */
+.footer {
+  padding: 2rem 0; /* Adjust padding as needed */
+  color: #ffffff; /* Text color, adjust as needed */
+}
+
+/* Dark Mode Footer Background */
+[data-theme='dark'] .footer {
+  background: linear-gradient(109.6deg, #ff007f 0%, #00274d 100%); /* Pink gradient */
+}
+
+/* Light Mode Footer Background */
+[data-theme='light'] .footer {
+  background: linear-gradient(109.6deg, #000000 11.2%, #0b8491 91.1%); /* Teal gradient */
+}
+
+
+/* Base style for the menu link buttons */
+.navbar__item .navbar__link {
+  color: #ffffff; /* Text color */
+  background-color: #007acc; /* Background color */
+  padding: 10px 15px; /* Padding around the link */
+  border-radius: 5px; /* Rounded corners */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect */
+.navbar__item .navbar__link:hover {
+  background-color: #005f9e; /* Darker background on hover */
+  color: #ffffff; /* Text color on hover */
+}
+
+/* Active link style */
+.navbar__item .navbar__link--active {
+  background-color: #005f9e; /* Background color for the active link */
+  color: #ffffff; /* Text color for the active link */
+}
