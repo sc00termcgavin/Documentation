@@ -118,12 +118,12 @@ import TabItem from '@theme/TabItem';
   <!-- Description List -->
   <div style={{ marginTop: '20px' }}>
     <ul style={{ listStyleType: 'disc', marginLeft: '20px' }}>
-      <li><strong>Preventive:</strong> Reduces the likelihood of a security breach from occurring.</li>
-      <li><strong>Deterrent:</strong> Controls to prevent incidents by discouraging threats and intrusion attempts.</li>
+      <li><strong>Preventive:</strong> Reduces the likelihood of a security breach from occurring. Prevents issues</li>
+      <li><strong>Deterrent:</strong> Controls to prevent incidents by discouraging threats and intrusion attempts. </li>
       <li><strong>Detective:</strong> Identify and record attempts of intrusions.</li>
       <li><strong>Corrective:</strong> Attempt to reverse the impact of an incident after an event has been detected.</li>
       <li><strong>Compensating:</strong> Temporary control using other means because existing controls aren’t sufficient.</li>
-      <li><strong>Directive:</strong> Enforce rule of behavior like policy.</li>
+      <li><strong>Directive:</strong> Directs behavior or actions in a desired way. Enforce rule of behavior like policy.</li>
       <ul>
         <li>Corrective operational controls are measures taken to address and rectify issues, deficiencies, or deviations identified in a system, process, or operation.</li>
       </ul>
@@ -134,7 +134,6 @@ import TabItem from '@theme/TabItem';
 ## <TextColor lightColor="#064CD5" darkColor="#EF1761">1.2 Security Concepts</TextColor>
 
 ### <TextColor lightColor="#000000" darkColor="#E3D4AD">CIA Triad</TextColor>
-
 
 - **Confidentiality**: Ensuring that information is accessible only to those who have the proper authorization, preventing unauthorized access.
 - **Integrity**: Ensures the accuracy and reliability of data throughout its lifecycle. It ensures that data is not altered or tampered with during transmission or storage.

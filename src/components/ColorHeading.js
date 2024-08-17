@@ -28,3 +28,4 @@ export default function ColorHeading({ children, color, level }) {
         </HeadingTag>
     );
 }
+

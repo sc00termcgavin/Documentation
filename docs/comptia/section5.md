@@ -86,7 +86,7 @@ import TextColor from '@site/src/components/TextColor';
 
 ## <TextColor lightColor="#064CD5" darkColor="#EF1761">5.4 Security Compliance</TextColor>
 
-- **Compliance Monitoring**: Internal and external compliance reporting aims to assess and disclose an organization's compliance status but differ in scope, audience, and purpose.
+- **Compliance Reporting**: Internal and external compliance reporting aims to assess and disclose an organization's compliance status but differ in scope, audience, and purpose.
   - Characteristics:
     - It aims to access and disclose an organization's compliance status.
     - It promotes accountability, transparency, and effective compliance management.
@@ -100,6 +100,7 @@ import TextColor from '@site/src/components/TextColor';
 
 - **Auditing**: Auditing involves an in-depth examination of the remediation process by reviewing the steps taken to address the vulnerability and ensuring they align with the organization's policies and best practices.
 - **Attestation**: Opinion of truth that is associated with an audit. individuals or entities to formally acknowledge their understanding of compliance obligations and commitment to adhere to them through signed agreements, policy acknowledgments, and training activities.
+  - **Attestation and acknowledgment** requires individuals or entities to announce their understanding of compliance obligations formally
 - **Audit committees**: Independent oversight and assurance regarding an organization's practices related to internal controls, risk management, and compliance.
 - **External examination**: Assessment of the organization's compliance with international standards and best practices.
 - **Engaging a third party for attestation**: provides stakeholders with an objective assurance about the effectiveness of the company's cybersecurity controls and compliance with industry standards, regulations, and best practices.
