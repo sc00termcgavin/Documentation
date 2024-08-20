@@ -3,13 +3,11 @@ title: Renewing Air Gap PGP Keys
 sidebar_position: 2
 ---
 
-
-
-
-
-Keys Generated on Tails and exported to my Yubikey
-
 ## Subkey expiry on Tails
+
+:::info
+Keys are generated on Tails and exported to a Yubikey
+:::
 
 ### Step 1: Boot to Tails and mount VeraCrypt Encrypted Volume
 
@@ -133,4 +131,5 @@ cp /media/amnesia/Tails/pub.asc "/media/amnesia/keyBackUp/johndoe.asc"
 
 
 > Shout out to: https://github.com/sunknudsen/privacy-guides
+
 > Notable Mention: https://github.com/drduh/YubiKey-Guide
