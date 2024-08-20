@@ -1,60 +1,29 @@
-/* src/components/Button.module.css
-.btnGrad {
-    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: inline-block;
-    text-decoration: none;
-  }
-  
-  .btnGrad:hover {
-    background-position: right center;
-    color: #fff;
-  } */
-
-           
-  /* .btn-grad {
-    background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%);
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-  } */
   :root {
     --button-text-color: black; /* Default text color for light mode */
-    --button-bg-color: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%) !important; /* Light mode gradient */
+    --button-bg-color: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%) !important; 
+
+    --button-shadow-color: rgba(0, 0, 0, 0.5);
   }
   
   [data-theme='dark'] {
     --button-text-color: white; /* Text color for dark mode */
-    --button-bg-color: linear-gradient(to right, #ff0084 0%, #33001b 51%, #ff0084 100%) !important; /* Dark mode gradient */
+    --button-bg-color: linear-gradient(to right, #ff0084 0%, #33001b 51%, #ff0084 100%) !important; 
+    --button-shadow-color: rgba(255, 255, 255, 0.5);
   }
   
   .btnGrad {
     background-image: var(--button-bg-color); /* Use variable for background */
     margin: 10px;
-    padding: 30px 80px;
-    font-size: 24px;
+    padding: 15px 40px;
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
     color: var(--button-text-color); /* Use variable for text color */
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px var(--button-shadow-color);
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;

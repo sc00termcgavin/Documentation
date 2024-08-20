@@ -14,7 +14,7 @@ const config = {
   },
   
   title: 'Development Documentation Digest',
-  tagline: 'A Curated Collection of Personal Notes',
+  // tagline: 'A Curated Collection of Personal Notes',
   // favicon: 'img/favicon.ico',
   
 
@@ -102,7 +102,6 @@ const config = {
             label: 'Docs',
           },
           {to: '/resume', label: 'Resume', position: 'left'},
-          // {to: '/blog', label: 'Blog', position: 'left'},
           
           {
             href: `https://github.com/${organizationName}/${projectName}`,
