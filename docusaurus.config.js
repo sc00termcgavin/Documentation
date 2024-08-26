@@ -101,7 +101,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/resume', label: 'Resume', position: 'left'},
+          // {to: '/resume', label: 'Resume', position: 'left'},
           
           {
             href: `https://github.com/${organizationName}/${projectName}`,
@@ -121,10 +121,6 @@ const config = {
               {
                 label: 'Docs',
                 to: 'docs/category/comptia',
-              },
-              {
-                label: 'Resume',
-                to: 'resume/',
               },
             ],
           },

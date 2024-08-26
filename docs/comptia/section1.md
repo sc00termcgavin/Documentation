@@ -118,10 +118,10 @@ import TabItem from '@theme/TabItem';
   <!-- Description List -->
   <div style={{ marginTop: '20px' }}>
     <ul style={{ listStyleType: 'disc', marginLeft: '20px' }}>
-      <li><strong>Preventive:</strong> Reduces the likelihood of a security breach from occurring. Prevents issues</li>
+      <li><strong>Preventive:</strong> Reduces the likelihood of a security breach from occurring. Aims to prevent issues</li>
       <li><strong>Deterrent:</strong> Controls to prevent incidents by discouraging threats and intrusion attempts. </li>
       <li><strong>Detective:</strong> Identify and record attempts of intrusions.</li>
-      <li><strong>Corrective:</strong> Attempt to reverse the impact of an incident after an event has been detected.</li>
+      <li><strong>Corrective:</strong> Attempt to mitigate the impact of an incident after an event has been detected.</li>
       <li><strong>Compensating:</strong> Temporary control using other means because existing controls aren’t sufficient.</li>
       <li><strong>Directive:</strong> Directs behavior or actions in a desired way. Enforce rule of behavior like policy.</li>
       <ul>
